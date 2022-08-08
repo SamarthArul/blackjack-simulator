@@ -5,12 +5,13 @@
 from project outlines:
 
 Card.java and CardTester.java
+
 A Card has three fundamental traits:
 - a rank (String which indicates the card value. Possible values are: Ace, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Jack, Queen, King)
-- a suit(String indicating one of four suits in a standard deck of cards. The suits are: Hearts, Diamonds, Spades, Clubs)
-- value(integer,the value assigned to a card can vary between card games. For our purposes, Aces will have an initial value of 11, face cards (Jacks, Queens and Kings) will have a value of 10 and all other cards have a value that matches its rank (i.e. a Two of Hearts has a value of 2).
+- a suit (String indicating one of four suits in a standard deck of cards. The suits are: Hearts, Diamonds, Spades, Clubs)
+- value (integer,the value assigned to a card can vary between card games. For our purposes, Aces will have an initial value of 11, face cards (Jacks, Queens and Kings) will have a value of 10 and all other cards have a value that matches its rank (i.e. a Two of Hearts has a value of 2).
 
-The Card class has a constructor. The constructor should take TWO inputs: the Card rank and the Card suit. The value of the Card object should be determined and assigned by the constructor.
+The Card class has a constructor. The constructor takes TWO inputs: the Card rank and the Card suit. The value of the Card object should be determined and assigned by the constructor.
   
 • Since Aces have special properties in the game of BlackJack, we need a couple of special methods to deal with them.
 - isAce: takes no inputs, returns a boolean value that indicates whether a particular Card is an Ace (true means the Card is an Ace)
@@ -23,7 +24,7 @@ A Deck contains a group of Cards. The standard Deck consists of 52 Cards. There 
 • The Deck class has a constructor. Creating a Deck should result in the creation of one and only one of each possible Card (52 total). As Cards are created, they should be added to our ArrayList. 
 • Other objects will be making use of our Deck, so a method getDeck() will be needed. This method returns a reference to the ArrayList of Cards contained in the Deck.
 • Finally, we need to be able to shuffle our Deck. shuffleDeck() accomplishes this task. The method should loop through the ArrayList and for each Card, swap the Card in the current position with another Card found at another randomly determined location in the list.
-• Although not required for the program, a toString() method that prints the value of each Card in your Deck can be helpful for testing purposes
+• a toString() method that prints the value of each Card in your Deck 
    
 Shoe.java and ShoeTester.java
 
